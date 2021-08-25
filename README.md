@@ -32,3 +32,8 @@ See the classroom instruction and code comments for more details on each of thes
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./2D_feature_tracking`.
+
+## Mid-Term Report
+* MP.1 Data Buffer Optimization
+  * To make sure the buffer size stays constant, the first element is earsed if the size exceeds the predefined number
+  after pushing new frames to the queue. For code efficiency deque is used instead of a vector.
