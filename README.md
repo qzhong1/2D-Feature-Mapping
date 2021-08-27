@@ -37,3 +37,14 @@ See the classroom instruction and code comments for more details on each of thes
 * MP.1 Data Buffer Optimization
   * To make sure the buffer size stays constant, the first element is earsed if the size exceeds the predefined number
   after pushing new frames to the queue. For code efficiency deque is used instead of a vector.
+* MP.2 Keypoint detection
+  * The original functions in the header file matching2D.hpp is used for implementation of the detectors. IF statement 
+  is used to select detectors. OpenCV library is used to create detectors. Non maximal suppression is used for Harris.
+* MP.3 Keypoint removal
+  * Each detected keypoints are checked against the boundary. It'll only be pushed into a new keypoint vector if it's inside the boundary. Finally replace the old vector with the new. 
+* MP.4 Keypoint descriptor
+  * Similarly to MP.2, OpenCV library is used to create each descriptor. IF statement is used for selection.
+* MP.5 Descriptor matching
+  * OpenCV library is used to create the FLANN descriptor matcher and KNN selection. Both selectable by IF statement. 
+* MP.6 Descriptor Distance Ratio
+  * For KNN, the ratio of top 2 best matches is compared against a threshold. The match will be rejected if the ratio is higher than the threshold. 
