@@ -47,7 +47,8 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
                 matches.push_back((*it)[0]);
             }
         }
-        cout << "# keypoints removed = " << knn_matches.size() - matches.size() << endl;
+        cout << " (KNN) with n=" << matches.size() << " matches" << endl;
+        // cout << "# keypoints removed = " << knn_matches.size() - matches.size() << endl;
     }
 }
 
