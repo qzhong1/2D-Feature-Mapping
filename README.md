@@ -49,8 +49,8 @@ See the classroom instruction and code comments for more details on each of thes
 * MP.6 Descriptor Distance Ratio
   * For KNN, the ratio of top 2 best matches is compared against a threshold. The match will be rejected if the ratio is higher than the threshold. 
 * MP.7 Performance Evaluation 1
-  * Details see 'Performance Evaluation.gnumeric' tab MP.7. BRISK gives the most number of keypoints, while due to non-maximal suppression, Harris gives the less. ORB give the most consistent number throughout all 10 frames.
+  * Details see 'Evaluation.xlsx' tab MP.7. BRISK gives the most number of keypoints, while due to non-maximal suppression, Harris gives the less. ORB give the most consistent number throughout all 10 frames.
 * MP.8 Performance Evaluation 2
-  * Details see 'Performance Evaluation.gnumeric' tab MP.8. The combination of BRISK as detector and SIFT as the descriptor gives the most number of matchings. 
+  * Details see 'Evaluation.xlsx' tab MP.8. The combination of BRISK as detector and SIFT as the descriptor gives the most number of matchings. 
 * MP.9 Performance Evaluation 3
-  * Details see 'Performance Evaluation.gnumeric' tab MP.9. FAST as detector is able to detect the keypoints in the shortest time frame. When combined with descriptor, the fastest is FAST+BRIEF. The second fastest is ORB+BRIEF, followed by FAST+ORB. To recommend top 3 combinations for self-driving cars, time is very important. The number of matches are also considered. Other combinations don't show too many adventages in terms of number of matches. As a result, top 3 would be: FAST+BRIEF, ORB+BRIEF and FAST+ORB.
+  * Details see 'Evaluation.xlsx' tab MP.9. FAST as detector is able to detect the keypoints in the shortest time frame. When combined with descriptor, the fastest is FAST+BRIEF. The second fastest is ORB+BRIEF, followed by FAST+ORB. To recommend top 3 combinations for self-driving cars, time is very important. The number of matches are also considered. Other combinations don't show too many adventages in terms of number of matches. As a result, top 3 would be: FAST+BRIEF, ORB+BRIEF and FAST+ORB.
